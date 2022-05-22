@@ -1,0 +1,17 @@
+.nav {
+  white-space: nowrap;
+  margin-right: 32px;
+  background: #FFFFFF;
+  border-radius: 16px;
+  width: 304px;
+  min-width: 300px;
+  height: 424px;
+}
+.nav a {
+  color: #222B55;
+  display: block;
+  padding: 11px 0 11px 32px;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=nav-style.css.map */

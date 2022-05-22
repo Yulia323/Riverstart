@@ -1,0 +1,68 @@
+@import "styles/fonts";
+@import "styles/basics-style";
+@import "styles/nav-style";
+@import "styles/content-style";
+@import "styles/features-style";
+@import "styles/limits-style";
+
+* {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  margin: 0;
+  color: $main-color;
+}
+
+body {
+  background-color: $main-background;
+}
+
+a {
+  text-decoration: none;
+  user-select: none;
+}
+
+h2 {
+  font-family: 'Metropolis', sans-serif;
+}
+
+.app-container {
+  padding: 47px 201px;
+  display: flex;
+
+  @media (max-width: $computer) {
+    padding: 47px 100px;
+  }
+
+  @media (max-width: $tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $smart-phone) {
+    padding: 40px 15px;
+  }
+
+
+  .main {
+    width: 100%;
+    .container {
+      min-height: 200px;
+      padding: 40px 60px;
+      background: $white;
+      border-radius: $basic-border-radius;
+
+      @media (max-width: $smart-phone) {
+        padding: 40px 50px;
+      }
+
+      .interactive_link {
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .interactive_link:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
