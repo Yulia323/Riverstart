@@ -4,6 +4,7 @@
 @import "styles/content-style";
 @import "styles/features-style";
 @import "styles/limits-style";
+@import "styles/tabs-styles";
 
 * {
   font-family: 'Lato', sans-serif;
@@ -23,6 +24,18 @@ a {
 
 h2 {
   font-family: 'Metropolis', sans-serif;
+}
+
+button {
+  color: $white;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  height: 32px;
+}
+
+button:active {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.33);
 }
 
 .app-container {
@@ -45,6 +58,7 @@ h2 {
 
   .main {
     width: 100%;
+
     .container {
       min-height: 200px;
       padding: 40px 60px;
@@ -64,5 +78,36 @@ h2 {
         text-decoration: underline;
       }
     }
+  }
+}
+
+progress {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+  background-color: $progress-bar-background;
+  height: 10px;
+}
+
+::-webkit-progress-bar {
+  background-color: $optional-blue;
+  border-radius: 10px;
+}
+
+::-moz-progress-bar {
+  border-radius: 10px;
+  background-color: $optional-blue;
+}
+
+.full-progress {
+  ::-webkit-progress-bar {
+    background-color: $coral;
+    border-radius: 10px;
+  }
+
+  ::-moz-progress-bar {
+    background-color: $coral;
+    border-radius: 10px;
   }
 }

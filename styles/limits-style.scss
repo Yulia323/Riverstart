@@ -5,101 +5,13 @@
   @media (max-width: $optional-computer) {
     height: 400px;
 
-    .limits_tabs {
+    .tabs {
       justify-content: center;
     }
-  }
-
-  .limits_tabs {
-    display: flex;
-
-  }
-
-  .limits_tabs_item {
-    font-size: 16px;
-    text-align: center;
-    min-width: 49px;
-    margin: 0 44px 40px 0;
-    padding-bottom: 16px;
-    cursor: pointer;
-    color: $blue-color;
-    user-select: none;
-  }
-
-  .limits_tabs_item.active-tab {
-    background: url("icons/active-tab.svg") bottom no-repeat;
-    font-weight: 700;
-    color: $main-color;
   }
 
   p {
     color: $blue-color;
     font-size: 14px;
-    margin: 0 10px 56px 0;
-  }
-
-  .tab {
-    display: none;
-
-    progress {
-      margin: 10px 0;
-    }
-  }
-
-  .tab.active-tab {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: space-between;
-
-    @media (max-width: $optional-computer) {
-      align-content: center;
-      flex-direction: column;
-    }
-
-    span {
-      color: $blue-color;
-    }
-
-    h4 {
-      font-weight: 400;
-      font-size: 16px;
-      color: $main-color;
-
-      span {
-        float: right;
-        color: $blue-color;
-      }
-    }
-
-    progress {
-      width: 312px;
-      border-radius: 10px;
-      border: none;
-      background-color: $progress-bar-background;
-      height: 10px;
-    }
-
-    .full-progress {
-      ::-webkit-progress-bar {
-        background-color: $coral;
-        border-radius: 10px;
-      }
-
-      ::-moz-progress-bar {
-        background-color: $coral;
-        border-radius: 10px;
-      }
-    }
-
-    ::-webkit-progress-bar {
-      background-color: $optional-blue;
-      border-radius: 10px;
-    }
-
-    ::-moz-progress-bar {
-      border-radius: 10px;
-      background-color: $optional-blue;
-    }
   }
 }

@@ -71,88 +71,77 @@
   }
 }
 
-button {
-  color: #FFFFFF;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  height: 32px;
-}
-
-button:active {
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.33);
-}
-
-.content hr {
-  color: rgba(34, 43, 85, 0.08);
-  margin: 40px 0;
-}
-.content .charge {
-  color: #7B829A;
-}
-.content .charge span {
-  color: #7B829A;
-}
-.content .card {
-  color: #415DE8;
-  margin-left: 22px;
-}
-.content-title {
+.toolbar {
   display: flex;
   justify-content: space-between;
   font-family: Metropolis, sans-serif;
   align-items: flex-end;
 }
-.content-title h2 {
+.toolbar h2 {
   font-size: 36px;
 }
-.content-title span {
+.toolbar span {
   color: #415DE8;
 }
-.content p {
+
+.invoicing-top hr {
+  color: rgba(34, 43, 85, 0.08);
+  margin: 40px 0;
+}
+.invoicing-top .charge {
+  color: #7B829A;
+}
+.invoicing-top .charge span {
+  color: #7B829A;
+}
+.invoicing-top .card {
+  color: #415DE8;
+  margin-left: 22px;
+}
+.invoicing-top p {
   color: gray;
   font-size: 20px;
   margin: 8px 0 20px 0;
 }
-.content p span {
+.invoicing-top p span {
   font-size: 28px;
   font-family: "Metropolis", sans-serif;
   font-weight: 700;
 }
-.content .switch {
+.invoicing-top .switch {
   display: flex;
 }
-.content .switch button {
+.invoicing-top .switch button {
   padding: 8px 0;
   margin-top: 20px;
   width: 165px;
   background: #415DE8;
 }
-.content .switch p {
+.invoicing-top .switch p {
   font-size: 14px;
   line-height: 20px;
   color: #222B55;
   margin: 26px 0 0 16px;
 }
-.content .switch p span {
+.invoicing-top .switch p span {
   font-size: 14px;
   font-weight: 400;
 }
 
-.features .icon {
+.invoicing-bottom .icon {
   color: #415DE8;
   cursor: pointer;
   font-size: 30px;
 }
-.features .icon-open {
+.invoicing-bottom .icon-open {
   position: relative;
   left: 50%;
 }
-.features h2 {
+.invoicing-bottom h2 {
   font-size: 20px;
   background: url("icons/features.svg") 210px no-repeat;
 }
-.features .feature {
+.invoicing-bottom .feature {
   display: flex;
   justify-content: space-between;
   border-radius: 12px;
@@ -161,16 +150,16 @@ button:active {
   margin-top: 20px;
 }
 @media (max-width: 500px) {
-  .features .feature {
+  .invoicing-bottom .feature {
     height: 210px;
   }
 }
-.features .feature .list h2 {
+.invoicing-bottom .feature .list h2 {
   font-size: 24px;
   color: #415DE8;
   background: none;
 }
-.features .feature .list ul {
+.invoicing-bottom .feature .list ul {
   display: flex;
   flex-direction: column;
   height: 108px;
@@ -178,16 +167,16 @@ button:active {
   margin-top: 16px;
   list-style-image: url("icons/list.svg");
 }
-.features .feature .upgrade {
+.invoicing-bottom .feature .upgrade {
   text-align: end;
 }
-.features .feature .upgrade p {
+.invoicing-bottom .feature .upgrade p {
   font-family: "Metropolis", sans-serif;
   font-weight: 700;
   font-size: 24px;
   margin-top: 16px;
 }
-.features .feature .upgrade p span {
+.invoicing-bottom .feature .upgrade p span {
   display: inline-block;
   width: 140px;
   font-size: 12px;
@@ -195,12 +184,12 @@ button:active {
   color: #7B829A;
   margin-top: 8px;
 }
-.features .feature .upgrade button {
+.invoicing-bottom .feature .upgrade button {
   background: #FF5762;
   width: 85px;
   margin-top: 25px;
 }
-.features .hidden {
+.invoicing-bottom .hidden {
   display: none;
 }
 
@@ -216,85 +205,64 @@ button:active {
   .limits {
     height: 400px;
   }
-  .limits .limits_tabs {
+  .limits .tabs {
     justify-content: center;
   }
 }
-.limits .limits_tabs {
-  display: flex;
+.limits p {
+  color: #7B829A;
+  font-size: 14px;
 }
-.limits .limits_tabs_item {
+
+.tabs {
+  display: flex;
+  margin-bottom: 40px;
+}
+.tabs .tabs_item {
   font-size: 16px;
   text-align: center;
   min-width: 49px;
-  margin: 0 44px 40px 0;
+  margin-right: 44px;
   padding-bottom: 16px;
   cursor: pointer;
   color: #7B829A;
   user-select: none;
 }
-.limits .limits_tabs_item.active-tab {
+.tabs .tabs_item.active-tab {
   background: url("icons/active-tab.svg") bottom no-repeat;
   font-weight: 700;
   color: #222B55;
 }
-.limits p {
-  color: #7B829A;
-  font-size: 14px;
-  margin: 0 10px 56px 0;
-}
-.limits .tab {
+
+.tab {
   display: none;
 }
-.limits .tab progress {
-  margin: 10px 0;
+.tab article {
+  width: 312px;
 }
-.limits .tab.active-tab {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-between;
-}
-@media (max-width: 1280px) {
-  .limits .tab.active-tab {
-    align-content: center;
-    flex-direction: column;
-  }
-}
-.limits .tab.active-tab span {
+.tab span {
   color: #7B829A;
 }
-.limits .tab.active-tab h4 {
+.tab h4 {
   font-weight: 400;
   font-size: 16px;
   color: #222B55;
 }
-.limits .tab.active-tab h4 span {
+.tab h4 span {
   float: right;
   color: #7B829A;
 }
-.limits .tab.active-tab progress {
-  width: 312px;
-  border-radius: 10px;
-  border: none;
-  background-color: #EBECF0;
-  height: 10px;
+
+.tab.active-tab {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
 }
-.limits .tab.active-tab .full-progress ::-webkit-progress-bar {
-  background-color: #FF5762;
-  border-radius: 10px;
-}
-.limits .tab.active-tab .full-progress ::-moz-progress-bar {
-  background-color: #FF5762;
-  border-radius: 10px;
-}
-.limits .tab.active-tab ::-webkit-progress-bar {
-  background-color: #415DE8;
-  border-radius: 10px;
-}
-.limits .tab.active-tab ::-moz-progress-bar {
-  border-radius: 10px;
-  background-color: #415DE8;
+@media (max-width: 1280px) {
+  .tab.active-tab {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
 }
 
 * {
@@ -315,6 +283,18 @@ a {
 
 h2 {
   font-family: "Metropolis", sans-serif;
+}
+
+button {
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  height: 32px;
+}
+
+button:active {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.33);
 }
 
 .app-container {
@@ -357,6 +337,34 @@ h2 {
 }
 .app-container .main .container .interactive_link:hover {
   text-decoration: underline;
+}
+
+progress {
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  margin: 10px 0;
+  background-color: #EBECF0;
+  height: 10px;
+}
+
+::-webkit-progress-bar {
+  background-color: #415DE8;
+  border-radius: 10px;
+}
+
+::-moz-progress-bar {
+  border-radius: 10px;
+  background-color: #415DE8;
+}
+
+.full-progress ::-webkit-progress-bar {
+  background-color: #FF5762;
+  border-radius: 10px;
+}
+.full-progress ::-moz-progress-bar {
+  background-color: #FF5762;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

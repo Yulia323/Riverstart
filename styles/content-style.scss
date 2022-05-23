@@ -1,16 +1,19 @@
-button {
-  color: $white;
-  border: none;
-  cursor: pointer;
-  border-radius: 8px;
-  height: 32px;
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: Metropolis, sans-serif;
+  align-items: flex-end;
+
+  h2 {
+    font-size: 36px;
+  }
+
+  span {
+    color: $optional-blue;
+  }
 }
 
-button:active {
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.33);
-}
-
-.content {
+.invoicing-top {
   hr {
     color: rgba(34, 43, 85, 0.08);
     margin: 40px 0;
@@ -27,21 +30,6 @@ button:active {
   .card {
     color: $optional-blue;
     margin-left: 22px;
-  }
-
-  &-title {
-    display: flex;
-    justify-content: space-between;
-    font-family: Metropolis, sans-serif;
-    align-items: flex-end;
-
-    h2 {
-      font-size: 36px;
-    }
-
-    span {
-      color: $optional-blue;
-    }
   }
 
   p {

@@ -27,9 +27,9 @@
         </section>
     </nav>
     <main class="main">
-        <div class="container">
-            <div class="content">
-                <div class="content-title">
+        <div class="invoicing container">
+            <div class="invoicing-top">
+                <div class="toolbar">
                     <h2>Invoicing Start</h2>
                     <span class="js-change-plan interactive_link">Change plan</span>
                 </div>
@@ -42,7 +42,7 @@
                 </div>
                 <hr>
             </div>
-            <section class="features">
+            <section class="invoicing-bottom">
                 <h2>Explore new features</h2>
                 <article class="feature js-feature">
                     <div class="list">
@@ -64,48 +64,46 @@
             </section>
         </div>
         <div class="limits container">
-            <nav>
-                    <div class="limits_tabs">
-                        <div class="limits_tabs_item js-limits_tabs_item active-tab" data-tab="#tab_1">Limits</div>
-                        <div class="limits_tabs_item js-limits_tabs_item" data-tab="#tab_2">Invoices</div>
-                    </div>
-                    <div>
-                        <section class="tab js-tab active-tab" id="tab_1">
-                            <article>
-                                <h4>Team members <span> <b>3</b> / 6</span></h4>
-                                <progress max="6" value="3"></progress>
-                                <p>Need more members? <span class="interactive_link">Upgrade your plan</span></p>
-                            </article>
-                            <article>
-                                <h4>Outgoing e-invoices <span>Unlimited</span></h4>
-                                <progress max="1" value="1"></progress>
-                                <p>Send as many e-invoices as you want</p>
-                            </article>
-                            <article class="full-progress">
-                                <h4>Connected sources (banks) <span><b>5</b> / 5</span></h4>
-                                <progress max="5" value="5"></progress>
-                                <p>Need more banks to connect? <span class="interactive_link"> Upgrade your plan</span></p>
-                            </article>
-                        </section>
-                        <section class="tab js-tab" id="tab_2">
-                            <article>
-                                <h4>Team members <span><b>1</b> / 6</span></h4>
-                                <progress max="6" value="2"></progress>
-                                <p>Need more members? <span class="interactive_link">Upgrade your plan</span></p>
-                            </article>
-                            <article>
-                                <h4>Outgoing e-invoices <span>Unlimited</span></h4>
-                                <progress max="3" value="3"></progress>
-                                <p>Send as many e-invoices as you want</p>
-                            </article>
-                            <article>
-                                <h4>Connected sources (banks) <span><b>2</b> / 5</span></h4>
-                                <progress max="5" value="2"></progress>
-                                <p>Need more banks to connect? <span class="interactive_link"> Upgrade your plan</span></p>
-                            </article>
-                        </section>
-                    </div>
-            </nav>
+            <div class="tabs">
+                <span class="tabs_item js-tabs_item active-tab" data-tab="#tab_1">Limits</span>
+                <span class="tabs_item js-tabs_item" data-tab="#tab_2">Invoices</span>
+            </div>
+            <div>
+                <section class="tab js-tab active-tab" id="tab_1">
+                    <article>
+                        <h4>Team members <span> <b>3</b> / 6</span></h4>
+                        <progress max="6" value="3"></progress>
+                        <p>Need more members? <span class="interactive_link">Upgrade your plan</span></p>
+                    </article>
+                    <article>
+                        <h4>Outgoing e-invoices <span>Unlimited</span></h4>
+                        <progress max="1" value="1"></progress>
+                        <p>Send as many e-invoices as you want</p>
+                    </article>
+                    <article class="full-progress">
+                        <h4>Connected sources (banks) <span><b>5</b> / 5</span></h4>
+                        <progress max="5" value="5"></progress>
+                        <p>Need more banks to connect? <span class="interactive_link"> Upgrade your plan</span></p>
+                    </article>
+                </section>
+                <section class="tab js-tab" id="tab_2">
+                    <article>
+                        <h4>Team members <span><b>1</b> / 6</span></h4>
+                        <progress max="6" value="2"></progress>
+                        <p>Need more members? <span class="interactive_link">Upgrade your plan</span></p>
+                    </article>
+                    <article>
+                        <h4>Outgoing e-invoices <span>Unlimited</span></h4>
+                        <progress max="3" value="3"></progress>
+                        <p>Send as many e-invoices as you want</p>
+                    </article>
+                    <article>
+                        <h4>Connected sources (banks) <span><b>2</b> / 5</span></h4>
+                        <progress max="5" value="2"></progress>
+                        <p>Need more banks to connect? <span class="interactive_link"> Upgrade your plan</span></p>
+                    </article>
+                </section>
+            </div>
         </div>
     </main>
 </div>

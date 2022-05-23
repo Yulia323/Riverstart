@@ -4,7 +4,7 @@ function init() {
     document.querySelector('.js-icon-close').addEventListener('click', toggleHidden);
     document.querySelector('.js-icon-open').addEventListener('click', toggleHidden);
     document.querySelector('.js-change-plan').addEventListener('click', changePlan);
-    document.querySelectorAll('.js-limits_tabs_item').forEach(
+    document.querySelectorAll('.js-tabs_item').forEach(
         tab => tab.addEventListener('click', changeTab));
 }
 
@@ -37,7 +37,7 @@ function changeTab(e) {
     let tabId = e.target.getAttribute('data-tab');
     let currentTab = document.querySelector(tabId)
 
-    document.querySelectorAll('.js-limits_tabs_item').forEach(tab => {
+    document.querySelectorAll('.js-tabs_item').forEach(tab => {
         if (tab.classList.contains('active-tab')) tab.classList.remove('active-tab');
     });
 
